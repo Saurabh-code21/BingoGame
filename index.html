@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> -- BINGO Card -- </title>
+        <!-- below meta tag is add for media queries to work-->
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+        <link rel="stylesheet" type="text/css" href="styles/main.css"/>
+        
+    </head>
+
+    <body>
+
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Let's Play B I N G O !!</h1>
+        </div>
+
+        <!-- Main Body Section -->
+        <div class="main-body" id="main-body">
+            <div class="bingo-play-arena">
+                <div class="bingo-matrix-body" id="bingo-matrix-body">
+                    
+                </div>
+                <div id="bingo-tally-board" class="bingo-tally-board">
+                    <h3>Bingo Tally Board</h3>
+                    <div id="bingo-called-out-numbers" class="bingo-called-out-numbers">
+                    
+                    </div>
+                </div>                
+                <div class="bingo-buttons-section">
+                    <div class="reset-bingo-container">
+                        <button onclick="resetBingoNumbers()" class="reset-bingo-button"> RESET </button>
+                    </div>
+                </div>
+            </div>
+            <div class="bingo-instructions-arena">
+                <div class="instruction-header"><h3>INSTRUCTIONS:</h3></div>
+                <div class="instruction-body">
+                    <h4 class="instruction-sub-heading">Game Play</h4>
+                    <ul class="instruction-list">
+                        <li>To start the game, the game-master(or may be you) will distribute a Bingo card to each player.</li>
+                        <li>Each player then gets ready with the Bingo card and "RESET" the card. To shuffle the numbers randomly in the card.</li>
+                        <li>The First caller calls out a number(any number available in the card : 1-25).</li>
+                        <li>Players look for that number in their cards and mark it done by clicking it.</li>
+                        <li>The number is also placed in their respective tally card (for everyone to verify in the end).</li>
+                        <li>Then calling of numbers continues in a particular sequence of players.</li>
+                        <li>During calling out numbers you can only call the numbers which are free and not marked already</li>
+                        <li>When a player has marked - a complete a row, either horizontally, vertically or diagonally, 
+                            then player can mark one of the characters in the header row "B I N G O".
+                        </li>
+                    </ul>
+                    <h4 class="instruction-sub-heading">End of the Game</h4>
+                    <ul class="instruction-list">
+                        <li>When a player has marked all characters in header row "B I N G O", the player calls out "BINGO!"
+                        </li>
+                        <li>When a player calls out "BINGO!", 
+                            the player has to share both the Bingo and Tally card with everyone 
+                            everyone can check the player's card against their Tally card and make certain 
+                            that the numbers marked, have been called (and marked in their's too).
+                        </li>
+                        <li>If there is a game master, he/she can maintain a Master Tally card as well. 
+                            So whenever anyone calls "BINGO!", game master can also confirm the WIN or if it is a WRONG CALL, 
+                            by checking the player's card against their Master Tally card.
+                        </li>
+                        <li>
+                            If all the numbers are correct, the player who called "BINGO!" is the winner.
+                        </li>
+                    </ul>                    
+                </div>
+                <div class="instruction-footer"></div>
+            </div>           
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer">
+            <span class="footer-disclaimer"> * shared for your time-pass with friends, enjoy :) - saurabh</span>
+        </div>
+
+        <!-- Popup-overlay Section -->
+        <div id="bingo-popup-message" class="bingo-message-area hide-content">                
+        </div>
+
+        <!-- Scripts Section -->
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
